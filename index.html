@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev | Manstein</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo CSS -->
     <link type="image/png" sizes="32x32" rel="icon" href="resources/icon.png">
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- Link para o Particle.js -->
@@ -19,94 +20,95 @@
             </span>
         </div>
     </div>
-        <div class="descricao" id="descricao"> <!-- Descrição -->
-            <!-- O texto será digitado aqui -->
-        </div>
-        <div class="imagens">
-            <!-- Ícones de tecnologia -->
-            <!-- Ícone do Java -->
-            <a href="#" onclick="openPopup('java')">
-                <img width="150" height="150" src="https://img.icons8.com/color/150/java-coffee-cup-logo--v1.png" alt="java-coffee-cup-logo--v1" style="position: absolute; top: 350px; left: 150px; z-index: 1;">
-            </a>
-            <!-- Ícone do HTML -->
-            <a href="#" onclick="openPopup('html')">
-                <img width="150" height="150" src="https://img.icons8.com/color/150/html-5--v1.png" alt="html-5--v1" style="position: absolute; top: 350px; left: 350px;">
-            </a>
-            <!-- Ícone do CSS -->
-            <a href="#" onclick="openPopup('css')">
-                <img width="150" height="150" src="https://img.icons8.com/color/150/css3.png" alt="css3" style="position: absolute; top: 350px; left: 550px;">
-            </a>
-            <!-- Ícone do JavaScript -->
-            <a href="#" onclick="openPopup('javascript')">
-                <img width="150" height="150" src="https://img.icons8.com/fluency/150/javascript.png" alt="javascript" style="position: absolute; top: 350px; left: 750px;">
-            </a>
-            <!-- Ícone do Android Studio -->
-            <a href="#" onclick="openPopup('android')">
-                <img width="150" height="150" src="https://img.icons8.com/color/150/android-studio--v3.png" alt="android-studio--v3" style="position: absolute; top: 350px; left: 950px;">
-            </a>
-        </div>
-        <div id="overlay" class="overlay" onclick="closePopup()"></div>
-        <div height="150" width="150"id="popup-java" class="popup">
-            <span class="close" onclick="closePopup()">&times;</span>
-            <h2>Java</h2>
-            <p>My Java abilities:</p>
-            <ul>
-                <li><strong>Object-Oriented Programming:</strong> Advanced</li>
-                <li><strong>Datatypes and Variables:</strong> Advanced</li>
-                <li><strong>Memory Management:</strong> Proficient</li>
-                <li><strong>Gradle & Maven:</strong> Advanced</li>
-                <li><strong>SQL Databases:</strong> Proficient</li>
-                <li><strong>JDBC & JDBI3:</strong> Proficient</li>
-                <li><strong>Frameworks:</strong> Spring Boot, JavaFX</li>
-            </ul>
-        </div>
-        
-        <div id="popup-html" class="popup">
-            <span class="close" onclick="closePopup()">&times;</span>
-            <h2>HTML5</h2>
-            <p>My HTML5 abilities:</p>
-            <ul>
-                <li><strong>Development of Websites:</strong> Advanced</li>
-                <li><strong>Knowledge of tags</strong> Proficient</li>
-                <li><strong>Stylization:</strong> Proficient</li>
-                <li><strong>Optimization of code:</strong> Proficient</li>
-                <li><strong>Frameworks:</strong> Bootstrap, Tailwip</li>
-            </ul>
-        </div>
-        
-        <div id="popup-css" class="popup">
-            <span class="close" onclick="closePopup()">&times;</span>
-            <h2>CSS</h2>
-            <p>My CSS abilities:</p>
-            <ul>
-                <li><strong>Responsive Web Design:</strong> Proficient</li>
-                <li><strong>CSS3 Features:</strong> Advanced</li>
-                <li><strong>CSS Preprocessors (Sass, Less):</strong> Proficient</li></li>
-                <li><strong>Responsive Frameworks (Bootstrap, Foundation):</strong> Proficient</li>
-                <li><strong>Optimization Techniques:</strong> Advanced</li>
-                <li><strong>Version Control (Git):</strong> Proficient</li>
-            </ul>
-        </div>
-        
-        <div id="popup-javascript" class="popup">
-            <span class="close" onclick="closePopup()">&times;</span>
-            <h2>JavaScript</h2>
-            <p>My JavaScript abilities:</p>
-            <ul>
-                <li><strong>DOM Manipulation:</strong> Proficient</li>
-                <li><strong>Event Handling:</strong> Proficient</li>
-                <li><strong>Arrays and Objects:</strong> Proficient</li>
-                <li><strong>Understanding of Asynchronous JavaScript:</strong> Beginner</li>
-                <li><strong>HTTP Requests (AJAX, Fetch API):</strong> Beginner</li>
-                <li><strong>Error Handling:</strong> Proficient</li>
-                <li><strong>ES6+ Features (Arrow Functions, Classes, etc.):</strong> Beginner</li>
-            </ul>
-        </div>
-        
-        <div id="popup-android" class="popup">
-            <span class="close" onclick="closePopup()">&times;</span>
-            <h2>Android</h2>
-            <p>My Android-Studio abilities:</p>
+    <div class="descricao" id="descricao"> <!-- Descrição -->
+        <!-- O texto será digitado aqui -->
+    </div>
+    <div class="imagens">
+        <!-- Ícones de tecnologia -->
+        <!-- Ícone do Java -->
+        <a href="#" onclick="openPopup('java')">
+            <img width="150" height="150" src="https://img.icons8.com/color/150/java-coffee-cup-logo--v1.png" alt="java-coffee-cup-logo--v1" style="position: absolute; top: 350px; left: 150px; z-index: 1;">
+        </a>
+        <!-- Ícone do HTML -->
+        <a href="#" onclick="openPopup('html')">
+            <img width="150" height="150" src="https://img.icons8.com/color/150/html-5--v1.png" alt="html-5--v1" style="position: absolute; top: 350px; left: 350px;">
+        </a>
+        <!-- Ícone do CSS -->
+        <a href="#" onclick="openPopup('css')">
+            <img width="150" height="150" src="https://img.icons8.com/color/150/css3.png" alt="css3" style="position: absolute; top: 350px; left: 550px;">
+        </a>
+        <!-- Ícone do JavaScript -->
+        <a href="#" onclick="openPopup('javascript')">
+            <img width="150" height="150" src="https://img.icons8.com/fluency/150/javascript.png" alt="javascript" style="position: absolute; top: 350px; left: 750px;">
+        </a>
+        <!-- Ícone do Android Studio -->
+        <a href="#" onclick="openPopup('android')">
+            <img width="150" height="150" src="https://img.icons8.com/color/150/android-studio--v3.png" alt="android-studio--v3" style="position: absolute; top: 350px; left: 950px;">
+        </a>
+    </div>
+    <div id="overlay" class="overlay" onclick="closePopup()"></div>
+    <div height="150" width="150"id="popup-java" class="popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2>Java</h2>
+        <p>My Java abilities:</p>
+        <ul>
+            <li><strong>Object-Oriented Programming:</strong> Advanced</li>
+            <li><strong>Datatypes and Variables:</strong> Advanced</li>
+            <li><strong>Memory Management:</strong> Proficient</li>
+            <li><strong>Gradle & Maven:</strong> Advanced</li>
+            <li><strong>SQL Databases:</strong> Proficient</li>
+            <li><strong>JDBC & JDBI3:</strong> Proficient</li>
+            <li><strong>Frameworks:</strong> Spring Boot, JavaFX</li>
+        </ul>
+    </div>
+    
+    <div id="popup-html" class="popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2>HTML5</h2>
+        <p>My HTML5 abilities:</p>
+        <ul>
+            <li><strong>Development of Websites:</strong> Advanced</li>
+            <li><strong>Knowledge of tags</strong> Proficient</li>
+            <li><strong>Stylization:</strong> Proficient</li>
+            <li><strong>Optimization of code:</strong> Proficient</li>
+            <li><strong>Frameworks:</strong> Bootstrap, Tailwip</li>
+        </ul>
+    </div>
+    
+    <div id="popup-css" class="popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2>CSS</h2>
+        <p>My CSS abilities:</p>
+        <ul>
+            <li><strong>Responsive Web Design:</strong> Proficient</li>
+            <li><strong>CSS3 Features:</strong> Advanced</li>
+            <li><strong>CSS Preprocessors (Sass, Less):</strong> Proficient</li></li>
+            <li><strong>Responsive Frameworks (Bootstrap, Foundation):</strong> Proficient</li>
+            <li><strong>Optimization Techniques:</strong> Advanced</li>
+            <li><strong>Version Control (Git):</strong> Proficient</li>
+        </ul>
+    </div>
+    
+    <div id="popup-javascript" class="popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2>JavaScript</h2>
+        <p>My JavaScript abilities:</p>
+        <ul>
+            <li><strong>DOM Manipulation:</strong> Proficient</li>
+            <li><strong>Event Handling:</strong> Proficient</li>
+            <li><strong>Arrays and Objects:</strong> Proficient</li>
+            <li><strong>Understanding of Asynchronous JavaScript:</strong> Beginner</li>
+            <li><strong>HTTP Requests (AJAX, Fetch API):</strong> Beginner</li>
+            <li><strong>Error Handling:</strong> Proficient</li>
+            <li><strong>ES6+ Features (Arrow Functions, Classes, etc.):</strong> Beginner</li>
+        </ul>
+    </div>
+    
+    <div id="popup-android" class="popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2>Android</h2>
+        <p>My Android-Studio abilities:</p>
+        <ul>
             <li><strong>Activity Lifecycle:</strong> Beginner</li>
             <li><strong>Working with Intents:</strong> Beginner</li>
             <li><strong>Understanding of Resources (e.g., Strings, Drawables):</strong> Beginner</li>
@@ -114,9 +116,28 @@
             <li><strong>Understanding of Activities and Fragments:</strong> Beginner</li>
             <li><strong>Basic Navigation between Screens:</strong> Beginner</li>
             <li><strong>Deployment to Emulator and Device:</strong> Beginner</li>
-        </div>
-        
+        </ul>
+    </div>
+    
+<script src="script.js"></script>
 
-    <script src="script.js"></script>
+<!-- Seção B -->
+<div class="secao-b">
+    <h2>Sobre Mim</h2>
+    <p>Hi, i'm Vinícius! I have 17 years, and i was born on Teodoro Sampaio, São Paulo, Brazil.</p>
+    <p>I started coding on Minecraft Bukkit using Java in 2020 and finally started my professional career in 2023, taking some lessons about Java and JavaScript.</p>
+    <h3>My knowledge:</h3>
+    <p>I'm proficient in Java, HTML5, CSS languages, also knowing the basics about JavaScript, Python and C++.</p>
+    <p>Also, i'm advanced on Bukkit API, proficient on JavaFX, Spring Boot, MYSql and SQLite. Also, i started learning about Android development with Java/Kotlin. And, i'm advanced on Linux, mainly Arch Linux and Ubuntu distros.</p>
+    <h3>Professional Experience:</h3>
+    <p>I was owner of a Minecraft Server on 2020, named Rede Vanity. It was coded by me and one friend of mine. It was there where i earned the needed experience and knowledge to start making Bukkit plugins.</p>
+    <h3>Some of my projects:</h3>
+    <ul>
+        <li><strong>Website:</strong> You're looking at it.</li>
+        <li><strong>Currency Converter:</strong> A simple currency converter based on Java and JavaFX framework.</li>
+        <li><strong>mAviso:</strong> A very simple plugin of mine, basically it does a warn on the chat.</li>
+    </ul>
+</div>
+
 </body>
 </html>

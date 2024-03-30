@@ -4,6 +4,26 @@ var velocidade = 50; // Velocidade de digitação (em milissegundos)
 var intervalo; // Variável para armazenar o intervalo
 var textoCompleto = false; // Variável para verificar se o texto foi completamente digitado
 
+document.addEventListener("DOMContentLoaded", function() {
+    var secaoB = document.querySelector(".secao-b");
+
+    window.addEventListener("scroll", function() {
+        console.log("Scroll event fired");
+        if (isInViewport(secaoB)) {
+            console.log("secaoB is in viewport");
+            secaoB.classList.add("visible");
+        }
+    });
+
+    function isInViewport(element) {
+        var rect = element.getBoundingClientRect();
+        return (
+            (rect.top >= 0 && rect.top <= window.innerHeight) ||
+            (rect.bottom >= 0 && rect.bottom <= window.innerHeight)
+        );
+    }
+});
+
 
 // Função para iniciar a digitação do texto
 function iniciarDigitacao() {

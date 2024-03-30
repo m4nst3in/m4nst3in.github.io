@@ -3,6 +3,46 @@ body.dark-theme {
     background-color: #121212;
     color: #ffffff; /* Cor do texto */
 }
+body {
+    overflow-y: auto; /* Adiciona uma barra de rolagem vertical apenas quando necessário */
+}
+.secao-b {
+    opacity: 0; /* Initially hide the section */
+    transition: opacity 1s ease; /* Apply transition effect */
+    margin-top: 600px; /* Adjust this value as needed */
+    padding: 20px;
+}
+.secao-b.visible {
+    opacity: 1; /* Make the section visible */
+}
+.secao-b h2 {
+    text-align: center;
+    font-family: 'CreamCake';
+    font-size: 50px;
+    margin: 0; /* Remove as margens */
+}
+.secao-b h3 {
+    text-align: center;
+    font-family: 'CreamCake';
+    font-size: 50px;
+    margin: 0; /* Remove as margens */
+}
+.secao-b p {
+    font-family: 'Montserrat', sans-serif; /* Fonte */
+    text-align: center;
+}
+.secao-b li {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 16px; /* Adjust size as needed */
+    line-height: 1.6; /* Adjust line height as needed */
+}
+.secao-b ul li strong {
+    text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px; /* Adjust size as needed */
+        margin: 0; /* Remove as margens */
+    }
 
 .all {
     letter-spacing: 0;
@@ -71,7 +111,7 @@ body.dark-theme {
     color: white;
     z-index: 2;
     animation: pop-in 1s;
-    height: 300px;
+    height: 340px;
     width: 400px;
     transform-origin: center; /* Define o ponto de origem da transformação no centro */
 }
@@ -94,6 +134,13 @@ body.dark-theme {
     right: 10px; /* Alterado de 'left' para 'right' para posicionar o botão no canto superior direito */
     color: white;
     cursor: pointer;
+}
+.popup.closing {
+    animation: pop-out 1s; /* Use the pop-out animation with a duration of 1 second */
+}
+@keyframes pop-out {
+    0% { opacity: 1; transform: scale(1) translate(-50%, -50%); }
+    100% { opacity: 0; transform: scale(0.1) translate(-50%, -50%); }
 }
 
 .popup.show {
@@ -118,4 +165,8 @@ body.dark-theme {
 @font-face {
     font-family: 'GroundationF';
     src: url('../resources/GroundationF.ttf') format('truetype'); /* Caminho para o arquivo de fonte */
+}
+@font-face {
+    font-family: 'CreamCake';
+    src: url('../resources/CreamCake.otf') format('truetype');
 }
