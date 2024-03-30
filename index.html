@@ -6,48 +6,40 @@
     <title>Dev | Manstein</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="styles.css">
     <link type="image/png" sizes="32x32" rel="icon" href="resources/icon.png">
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- Link para o Particle.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body class="dark-theme">
     <div id="particles-js"></div>
 
     <div class="all">
         <div class="dev">
-            <span id="m-with-crown"> <!-- Div para o título "Developer" -->
+            <span id="m-with-crown">
                 <img width="65" height="65" id="coroa" src="https://img.icons8.com/fluency/96/crown.png" alt="coroa">Manstein
             </span>
         </div>
     </div>
-    <div class="descricao" id="descricao"> <!-- Descrição -->
-        <!-- O texto será digitado aqui -->
-    </div>
+    <div class="descricao" id="descricao"></div>
     <div class="imagens">
-        <!-- Ícones de tecnologia -->
-        <!-- Ícone do Java -->
         <a href="#" onclick="openPopup('java')">
             <img width="150" height="150" src="https://img.icons8.com/color/150/java-coffee-cup-logo--v1.png" alt="java-coffee-cup-logo--v1" style="position: absolute; top: 350px; left: 150px; z-index: 1;">
         </a>
-        <!-- Ícone do HTML -->
         <a href="#" onclick="openPopup('html')">
             <img width="150" height="150" src="https://img.icons8.com/color/150/html-5--v1.png" alt="html-5--v1" style="position: absolute; top: 350px; left: 350px;">
         </a>
-        <!-- Ícone do CSS -->
         <a href="#" onclick="openPopup('css')">
             <img width="150" height="150" src="https://img.icons8.com/color/150/css3.png" alt="css3" style="position: absolute; top: 350px; left: 550px;">
         </a>
-        <!-- Ícone do JavaScript -->
         <a href="#" onclick="openPopup('javascript')">
             <img width="150" height="150" src="https://img.icons8.com/fluency/150/javascript.png" alt="javascript" style="position: absolute; top: 350px; left: 750px;">
         </a>
-        <!-- Ícone do Android Studio -->
         <a href="#" onclick="openPopup('android')">
             <img width="150" height="150" src="https://img.icons8.com/color/150/android-studio--v3.png" alt="android-studio--v3" style="position: absolute; top: 350px; left: 950px;">
         </a>
     </div>
     <div id="overlay" class="overlay" onclick="closePopup()"></div>
-    <div height="150" width="150"id="popup-java" class="popup">
+    <div id="popup-java" class="popup">
         <span class="close" onclick="closePopup()">&times;</span>
         <h2>Java</h2>
         <p>My Java abilities:</p>
@@ -61,7 +53,6 @@
             <li><strong>Frameworks:</strong> Spring Boot, JavaFX</li>
         </ul>
     </div>
-    
     <div id="popup-html" class="popup">
         <span class="close" onclick="closePopup()">&times;</span>
         <h2>HTML5</h2>
@@ -74,7 +65,6 @@
             <li><strong>Frameworks:</strong> Bootstrap, Tailwip</li>
         </ul>
     </div>
-    
     <div id="popup-css" class="popup">
         <span class="close" onclick="closePopup()">&times;</span>
         <h2>CSS</h2>
@@ -82,13 +72,12 @@
         <ul>
             <li><strong>Responsive Web Design:</strong> Proficient</li>
             <li><strong>CSS3 Features:</strong> Advanced</li>
-            <li><strong>CSS Preprocessors (Sass, Less):</strong> Proficient</li></li>
+            <li><strong>CSS Preprocessors (Sass, Less):</strong> Proficient</li>
             <li><strong>Responsive Frameworks (Bootstrap, Foundation):</strong> Proficient</li>
             <li><strong>Optimization Techniques:</strong> Advanced</li>
             <li><strong>Version Control (Git):</strong> Proficient</li>
         </ul>
     </div>
-    
     <div id="popup-javascript" class="popup">
         <span class="close" onclick="closePopup()">&times;</span>
         <h2>JavaScript</h2>
@@ -103,7 +92,6 @@
             <li><strong>ES6+ Features (Arrow Functions, Classes, etc.):</strong> Beginner</li>
         </ul>
     </div>
-    
     <div id="popup-android" class="popup">
         <span class="close" onclick="closePopup()">&times;</span>
         <h2>Android</h2>
@@ -118,7 +106,6 @@
             <li><strong>Deployment to Emulator and Device:</strong> Beginner</li>
         </ul>
     </div>
-    
 <script src="script.js"></script>
 
 <!-- Seção B -->

@@ -1,52 +1,50 @@
-/* CSS para o tema escuro */
 html {
     scroll-behavior: smooth;
 }
 body.dark-theme {
     background-color: #121212;
-    color: #ffffff; /* Cor do texto */
+    color: #ffffff;
 }
 body {
-    overflow-y: auto; /* Adiciona uma barra de rolagem vertical apenas quando necessário */
+    overflow-y: auto;
 }
 .secao-b {
-    opacity: 0; /* Initially hide the section */
-    transition: opacity 1s ease; /* Apply transition effect */
-    margin-top: 600px; /* Adjust this value as needed */
+    opacity: 0;
+    transition: opacity 1s ease;
+    margin-top: 600px;
     padding: 20px;
 }
 .secao-b.visible {
-    opacity: 1; /* Make the section visible */
+    opacity: 1;
 }
 .secao-b h2 {
     text-align: center;
     font-family: 'CreamCake';
     font-size: 50px;
-    margin: 0; /* Remove as margens */
+    margin: 0;
 }
 .secao-b h3 {
     text-align: center;
     font-family: 'CreamCake';
     font-size: 50px;
-    margin: 0; /* Remove as margens */
+    margin: 0;
 }
 .secao-b p {
-    font-family: 'Montserrat', sans-serif; /* Fonte */
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
 .secao-b li {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    font-size: 16px; /* Adjust size as needed */
-    line-height: 1.6; /* Adjust line height as needed */
+    font-size: 16px;
+    line-height: 1.6;
 }
 .secao-b ul li strong {
     text-align: center;
-        font-family: 'Roboto', sans-serif;
-        font-size: 30px; /* Adjust size as needed */
-        margin: 0; /* Remove as margens */
-    }
-
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    margin: 0;
+}
 .all {
     letter-spacing: 0;
 }
@@ -54,61 +52,52 @@ body {
     position: relative;
     display: inline-block;
 }
-
 #coroa {
     position: absolute;
-    top: -53px; /* Ajuste conforme necessário */
+    top: -53px;
     left: 75px;
     transform: rotate(10deg);
 }
-
-/* Estilo para o título "Developer" */
 .dev {
-    font-family: 'GroundationF'; /* Define a fonte */
-    font-size: 106px; /* Define o tamanho da fonte */
-    color: #ffffff; /* Cor do texto */
-    position: absolute; /* Usando posicionamento absoluto */
-    top: 85px; /* Ajusta a posição vertical */
-    left: 450px; /* Ajusta a posição horizontal */
-    margin: 0; /* Remove as margens */
+    font-family: 'GroundationF';
+    font-size: 106px;
+    color: #ffffff;
+    position: absolute;
+    top: 85px;
+    left: 450px;
+    margin: 0;
 }
-
-/* Estilo para a descrição */
 .descricao {
-    font-size: 36px; /* Tamanho da fonte */
-    font-family: 'Montserrat', sans-serif; /* Fonte */
-    color: #9E9E9E; /* Cor do texto */
-    position: absolute; /* Usando posicionamento absoluto */
-    top: 229px; /* Ajusta a posição vertical */
-    left: 225px; /* Ajusta a posição horizontal */
-    margin: 0; /* Remove as margens */
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+    color: #9E9E9E;
+    position: absolute;
+    top: 229px;
+    left: 225px;
+    margin: 0;
 }
-
 .imagens a img {
-    transition: transform 0.2s ease; /* Transição suave de escala */
+    transition: transform 0.2s ease;
     cursor: pointer;
 }
-
-/* Estilo para a animação ao passar o mouse */
 .imagens a:hover img {
-    transform: scale(1.05); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+    transform: scale(1.05);
 }
-
 #particles-js {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Garante que as partículas fiquem atrás do conteúdo */
+    z-index: -1;
 }
 .popup {
     display: none;
-    position: fixed; /* Alterado para 'fixed' para garantir que o popup fique fixo na tela */
-    top: 50%; /* Posiciona o topo do popup no meio da tela */
-    left: 50%; /* Posiciona a esquerda do popup no meio da tela */
-    transform: translate(-50%, -50%); /* Move o popup de volta em 50% de sua própria largura e altura */
-    background-color: #333; /* Cinza escuro */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
     padding: 20px;
     border-radius: 10px;
     color: white;
@@ -116,40 +105,22 @@ body {
     animation: pop-in 1s;
     height: 340px;
     width: 400px;
-    transform-origin: center; /* Define o ponto de origem da transformação no centro */
+    transform-origin: center;
 }
 @keyframes pop-in {
     0% { opacity: 0; transform: scale(0.1) translate(-50%, -50%); }
     100% { opacity: 1; transform: scale(1) translate(-50%, -50%); }
 }
-
-.popup h2 {
-    color: white; /* Texto do título branco */
-}
-
-.popup p {
-    color: white; /* Texto do conteúdo branco */
-}
-
 .popup .close {
     position: absolute;
     top: 10px;
-    right: 10px; /* Alterado de 'left' para 'right' para posicionar o botão no canto superior direito */
+    right: 10px;
     color: white;
     cursor: pointer;
 }
-.popup.closing {
-    animation: pop-out 1s; /* Use the pop-out animation with a duration of 1 second */
-}
-@keyframes pop-out {
-    0% { opacity: 1; transform: scale(1) translate(-50%, -50%); }
-    100% { opacity: 0; transform: scale(0.1) translate(-50%, -50%); }
-}
-
 .popup.show {
     display: block;
 }
-
 .close-btn {
     position: absolute;
     top: 10px;
@@ -158,16 +129,12 @@ body {
 .popup .close {
     cursor: pointer;
 }
-
-
 .close-btn:hover {
     color: #ccc;
 }
-
-/* Incorporação da fonte personalizada */
 @font-face {
     font-family: 'GroundationF';
-    src: url('../resources/GroundationF.ttf') format('truetype'); /* Caminho para o arquivo de fonte */
+    src: url('../resources/GroundationF.ttf') format('truetype');
 }
 @font-face {
     font-family: 'CreamCake';
