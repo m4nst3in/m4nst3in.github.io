@@ -1,0 +1,121 @@
+/* CSS para o tema escuro */
+body.dark-theme {
+    background-color: #121212;
+    color: #ffffff; /* Cor do texto */
+}
+
+.all {
+    letter-spacing: 0;
+}
+#m-with-crown {
+    position: relative;
+    display: inline-block;
+}
+
+#coroa {
+    position: absolute;
+    top: -53px; /* Ajuste conforme necessário */
+    left: 75px;
+    transform: rotate(10deg);
+}
+
+/* Estilo para o título "Developer" */
+.dev {
+    font-family: 'GroundationF'; /* Define a fonte */
+    font-size: 106px; /* Define o tamanho da fonte */
+    color: #ffffff; /* Cor do texto */
+    position: absolute; /* Usando posicionamento absoluto */
+    top: 85px; /* Ajusta a posição vertical */
+    left: 450px; /* Ajusta a posição horizontal */
+    margin: 0; /* Remove as margens */
+}
+
+/* Estilo para a descrição */
+.descricao {
+    font-size: 36px; /* Tamanho da fonte */
+    font-family: 'Montserrat', sans-serif; /* Fonte */
+    color: #9E9E9E; /* Cor do texto */
+    position: absolute; /* Usando posicionamento absoluto */
+    top: 229px; /* Ajusta a posição vertical */
+    left: 225px; /* Ajusta a posição horizontal */
+    margin: 0; /* Remove as margens */
+}
+
+.imagens a img {
+    transition: transform 0.2s ease; /* Transição suave de escala */
+    cursor: pointer;
+}
+
+/* Estilo para a animação ao passar o mouse */
+.imagens a:hover img {
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Garante que as partículas fiquem atrás do conteúdo */
+}
+.popup {
+    display: none;
+    position: fixed; /* Alterado para 'fixed' para garantir que o popup fique fixo na tela */
+    top: 50%; /* Posiciona o topo do popup no meio da tela */
+    left: 50%; /* Posiciona a esquerda do popup no meio da tela */
+    transform: translate(-50%, -50%); /* Move o popup de volta em 50% de sua própria largura e altura */
+    background-color: #333; /* Cinza escuro */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    z-index: 2;
+    animation: pop-in 1s;
+    height: 300px;
+    width: 400px;
+    transform-origin: center; /* Define o ponto de origem da transformação no centro */
+}
+@keyframes pop-in {
+    0% { opacity: 0; transform: scale(0.1) translate(-50%, -50%); }
+    100% { opacity: 1; transform: scale(1) translate(-50%, -50%); }
+}
+
+.popup h2 {
+    color: white; /* Texto do título branco */
+}
+
+.popup p {
+    color: white; /* Texto do conteúdo branco */
+}
+
+.popup .close {
+    position: absolute;
+    top: 10px;
+    right: 10px; /* Alterado de 'left' para 'right' para posicionar o botão no canto superior direito */
+    color: white;
+    cursor: pointer;
+}
+
+.popup.show {
+    display: block;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.popup .close {
+    cursor: pointer;
+}
+
+
+.close-btn:hover {
+    color: #ccc;
+}
+
+/* Incorporação da fonte personalizada */
+@font-face {
+    font-family: 'GroundationF';
+    src: url('../resources/GroundationF.ttf') format('truetype'); /* Caminho para o arquivo de fonte */
+}
