@@ -1,4 +1,7 @@
 /* CSS para o tema escuro */
+html {
+    scroll-behavior: smooth;
+}
 body.dark-theme {
     background-color: #121212;
     color: #ffffff; /* Cor do texto */
