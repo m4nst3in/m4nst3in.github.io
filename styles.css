@@ -8,6 +8,39 @@ body.dark-theme {
 body {
     overflow-y: auto;
 }
+ul.no-dot {
+    list-style-type: none; /* Remove default list styling */
+}
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Make the container full height of the viewport */
+  }
+
+  /* Style the image */
+  .center-container img {
+    border-radius: 10px; /* Rounded corners */
+    margin: -10px 0; /* Reduce the external top and bottom border */
+  }
+
+  /* Remove list style */
+  .no-dot {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Style list items */
+  .no-dot li {
+    margin-bottom: 10px; /* Adjust the space between list items */
+  }
+.contact-me {
+    margin-top: 250px;
+}
+.website-css {
+    margin-top: 260px;
+}
 .secao-b {
     opacity: 0;
     transition: opacity 1s ease;
@@ -131,6 +164,9 @@ body {
 }
 .close-btn:hover {
     color: #ccc;
+}
+.discord-activity {
+    text-align: center;
 }
 @font-face {
     font-family: 'GroundationF';
